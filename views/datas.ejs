@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+     <h1>Hello guys</h1>
+
+ <% usered.forEach(function(user) { %> 
+    <button style="color:blue" onclick=location.href="/delete/<%= user._id %>">button</button>
+  <h1 style="color:red"><%= user.name %></h1>
+  <h1 style="color:red"><%= user.email %></h1>
+  <h1 style="color:red"><%= user.language %></h1>
+  <h1 style="color:red"><%= user.salary %></h1>
+ <% }) %>
+
+     
+</body>
+</html>
